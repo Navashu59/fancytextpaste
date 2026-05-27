@@ -98,3 +98,29 @@ Check 7-14 days after deployment:
 - Whether Google starts showing clearer query/page matching for homepage, bold, Instagram, italic, and strikethrough pages.
 
 If impressions recover but CTR stays weak, next action is SERP title/meta testing. If impressions do not recover after 14-21 days, inspect indexing, sitemap, and canonical behavior before adding more content.
+
+## Ranking Improvement Method
+
+Use this method after a page has real GSC exposure for a query but still ranks too low to earn meaningful clicks.
+
+Trigger:
+
+- A query has impressions in GSC.
+- Google maps that query to a clear page.
+- The page is not in the top 3, or it has low CTR despite relevant impressions.
+- The query fits the active FancyTextPaste cluster.
+
+Process:
+
+1. Map the exposed query to its ranking page.
+2. Search the query in Google and inspect the top 3 organic results.
+3. Record the content blocks, questions, examples, tables, steps, compatibility notes, and FAQ topics those results cover.
+4. Inspect Google SERP features, especially People Also Ask, featured snippets, related searches, and any visible answer modules.
+5. Identify useful intent gaps that the current page does not answer.
+6. Add only the gaps that genuinely help the user complete the page's job.
+7. Write original wording and examples. Do not copy competitor phrasing or paragraph structure.
+8. Prefer richer, more practical answers than the top results: platform-specific examples, Unicode limitations, copy-paste workflow, compatibility caveats, and tool-specific usage.
+9. Update internal links only when they clarify the user's next action or route authority within the same cluster.
+10. Recheck GSC after 7-14 days and compare impressions, clicks, CTR, average position, and new long-tail queries.
+
+This method belongs to content refresh and ranking-lift work, not wave-1 boundary cleanup. For FancyTextPaste, use it after the current deployment has enough post-change GSC data to avoid rewriting pages blindly.
