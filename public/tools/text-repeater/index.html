@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9032385955610751" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Repeater - Repeat Text Multiple Times (Copy & Paste)</title>
+<meta name="description" content="Free text repeater tool. Repeat any text multiple times with custom separators. Add numbering, reverse every other line, or random spacing.">
+<link rel="canonical" href="https://fancytextpaste.com/tools/text-repeater/">
+<meta property="og:title" content="Text Repeater - Repeat Text Multiple Times Online">
+<meta property="og:description" content="Repeat any text as many times as you want with custom separators. Perfect for testing, social media, and practice text generation.">
+<meta property="og:url" content="https://fancytextpaste.com/tools/text-repeater/">
+<meta property="og:type" content="website">
+    <meta property="og:image" content="https://fancytextpaste.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Text Repeater - Repeat Text Multiple Times (Copy & Paste)">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Text Repeater","url":"https://fancytextpaste.com/tools/text-repeater/","description":"Free text repeater tool. Repeat any text multiple times with custom separators, numbering, and formatting options.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://fancytextpaste.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://fancytextpaste.com/tools/"},{"@type":"ListItem","position":3,"name":"Text Repeater","item":"https://fancytextpaste.com/tools/text-repeater/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a text repeater?","acceptedAnswer":{"@type":"Answer","text":"A text repeater is a tool that takes any text you enter and duplicates it a specified number of times. You can choose different separators between each repetition (new line, space, comma, or custom text) and add optional features like numbering or reverse formatting."}},{"@type":"Question","name":"How many times can I repeat text?","acceptedAnswer":{"@type":"Answer","text":"Our text repeater supports up to 10,000 repetitions. For very large numbers of repetitions, the output may take a moment to generate. Most practical uses require fewer than 1,000 repetitions."}},{"@type":"Question","name":"Can I use the text repeater for social media?","acceptedAnswer":{"@type":"Answer","text":"Yes! The text repeater is commonly used to create repeated text for social media posts, comments, and messages. Simply enter your text, set the number of repetitions and separator, then copy the output and paste it wherever you need it."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Text Repeater - Repeat Text Multiple Times Online","author":{"@type":"Person","name":"Alex Chen","url":"https://fancytextpaste.com/about/"},"publisher":{"@type":"Organization","name":"fancytextpaste","url":"https://fancytextpaste.com/"},"datePublished":"2026-02-15","dateModified":"2026-02-15"}
+</script>
+<style>
+.eeat-byline{display:flex;align-items:center;gap:8px;font-size:0.85rem;color:#666;margin:8px 0 0;flex-wrap:wrap}.eeat-byline .author{font-weight:500;color:#444}.eeat-byline .sep{color:#ccc}
+.repeater-tool{max-width:900px;margin:0 auto}
+.repeater-card{background:var(--color-card-bg);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:28px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
+.repeater-controls{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;margin-bottom:20px}
+.control-group{display:flex;flex-direction:column;gap:4px}
+.control-group label{font-size:0.85rem;font-weight:600;color:var(--color-text)}
+.control-group input[type="number"],.control-group select,.control-group input[type="text"]{padding:8px 12px;border:1.5px solid var(--color-border);border-radius:var(--radius-sm);font-size:0.9rem;font-family:var(--font-stack);color:var(--color-text);background:var(--color-bg);transition:border-color 0.2s}
+.control-group input:focus,.control-group select:focus{outline:none;border-color:var(--color-primary)}
+.control-group input[type="number"]{width:100px}
+.control-group input[type="text"]{width:120px}
+.checkbox-group{display:flex;align-items:center;gap:8px;padding:8px 0}
+.checkbox-group label{font-size:0.85rem;font-weight:500;color:var(--color-text-light);cursor:pointer}
+.checkbox-group input[type="checkbox"]{width:16px;height:16px;cursor:pointer;accent-color:var(--color-primary)}
+.repeater-textarea{width:100%;min-height:100px;padding:16px;font-size:1rem;font-family:var(--font-stack);border:1.5px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-bg);color:var(--color-text);resize:vertical;transition:border-color 0.2s;line-height:1.6}
+.repeater-textarea:focus{outline:none;border-color:var(--color-primary)}
+.repeater-textarea::placeholder{color:var(--color-text-lighter)}
+.output-header{display:flex;justify-content:space-between;align-items:center;margin:20px 0 10px}
+.output-header h3{font-size:1rem;font-weight:600;color:var(--color-text)}
+.output-stats{font-size:0.8rem;color:var(--color-text-light)}
+.output-box{width:100%;min-height:120px;max-height:400px;overflow-y:auto;padding:16px;font-size:0.95rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);background:white;color:var(--color-text);line-height:1.6;word-break:break-word;white-space:pre-wrap}
+.btn-generate{display:inline-flex;align-items:center;gap:6px;padding:10px 24px;font-size:0.9rem;font-weight:600;color:#fff;background:var(--color-primary);border:none;border-radius:var(--radius-sm);cursor:pointer;transition:all 0.2s;font-family:var(--font-stack)}
+.btn-generate:hover{background:var(--color-primary-dark);transform:translateY(-1px)}
+.btn-copy-out{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;font-size:0.85rem;font-weight:600;color:var(--color-primary);background:transparent;border:1.5px solid var(--color-primary);border-radius:6px;cursor:pointer;transition:all 0.2s;font-family:var(--font-stack)}
+.btn-copy-out:hover{background:var(--color-primary);color:#fff}
+.btn-copy-out.copied{background:var(--color-success);border-color:var(--color-success);color:#fff}
+.custom-sep-wrapper{display:none}
+.custom-sep-wrapper.visible{display:block}
+@media (max-width:768px){.repeater-controls{flex-direction:column;align-items:stretch}.control-group input[type="number"],.control-group input[type="text"]{width:100%}}
+</style>
+</head>
+<body>
+
+<header class="site-header"><div class="header-inner"><a href="/" class="site-logo"><span class="logo-icon">Ff</span> FancyTextPaste</a><button id="mobile-menu-toggle" aria-label="Toggle menu">&#9776;</button><nav class="main-nav" id="main-nav"><a href="/">Generator</a><a href="/tools/" class="active">All Tools</a><a href="/platforms/">Platforms</a><a href="/guides/">Guides</a></nav></div></header>
+
+
+<nav class="breadcrumbs"><div class="container"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Tools</a></li><li><span>Text Repeater</span></li></ol></div></nav>
+
+<section class="tool-hero">
+  <div class="container">
+    <h1>Text Repeater</h1>
+    <p class="subtitle">Repeat any text multiple times with custom separators. Add numbering, reverse every other line, or random spacing. Copy the result instantly.</p>
+    <div class="eeat-byline"><span class="author">By Alex Chen</span><span class="sep">|</span><time datetime="2026-02-15">Updated Feb 15, 2026</time></div>
+  </div>
+</section>
+
+<main class="main-content">
+  <div class="container">
+    <div class="repeater-tool">
+      <div class="repeater-card">
+        <label for="repeat-input" style="font-size:0.9rem;font-weight:600;color:var(--color-text);display:block;margin-bottom:8px">Text to Repeat</label>
+        <textarea class="repeater-textarea" id="repeat-input" placeholder="Type the text you want to repeat..." rows="3">Hello World</textarea>
+
+        <div class="repeater-controls">
+          <div class="control-group">
+            <label for="repeat-count">Repetitions</label>
+            <input type="number" id="repeat-count" min="1" max="10000" value="5">
+          </div>
+          <div class="control-group">
+            <label for="separator-select">Separator</label>
+            <select id="separator-select">
+              <option value="newline" selected>New Line</option>
+              <option value="space">Space</option>
+              <option value="comma">Comma</option>
+              <option value="custom">Custom...</option>
+            </select>
+          </div>
+          <div class="control-group custom-sep-wrapper" id="custom-sep-wrapper">
+            <label for="custom-separator">Custom Separator</label>
+            <input type="text" id="custom-separator" placeholder="e.g. | or -">
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+          <div class="checkbox-group">
+            <input type="checkbox" id="opt-numbering">
+            <label for="opt-numbering">Add numbering (1. 2. 3.)</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="opt-reverse">
+            <label for="opt-reverse">Reverse every other line</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="opt-random-spacing">
+            <label for="opt-random-spacing">Random spacing</label>
+          </div>
+        </div>
+
+        <button class="btn-generate" id="btn-generate" type="button">Generate Repeated Text</button>
+
+        <div class="output-header">
+          <h3>Output</h3>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span class="output-stats" id="output-stats"></span>
+            <button class="btn-copy-out" id="btn-copy" type="button">Copy</button>
+          </div>
+        </div>
+        <div class="output-box" id="output-box"></div>
+      </div>
+    </div>
+
+    <section class="seo-content">
+      <h2>Text Repeater - Repeat Text Multiple Times Online</h2>
+      <p>Our text repeater tool lets you duplicate any text as many times as you need. Whether you need to repeat a word, sentence, or entire paragraph, simply enter your text, choose the number of repetitions and separator style, then click generate. The output is ready to copy and paste anywhere.</p>
+
+      <h3>How the Text Repeater Works</h3>
+      <p>Enter the text you want repeated in the input field and set the number of repetitions (up to 10,000). Choose a separator to place between each repetition: new line, space, comma, or a custom separator of your choice. Optional features include numbering each repetition, reversing every other line for visual variety, and adding random spacing between characters for a glitchy aesthetic effect.</p>
+
+      <h3>Use Cases for Text Repetition</h3>
+      <ul>
+        <li><strong>Social media emphasis</strong> - Repeat words or phrases for dramatic effect in comments and posts on <a href="/platforms/instagram-fonts/">Instagram</a>, <a href="/platforms/twitter-fonts/">Twitter/X</a>, and <a href="/platforms/tiktok-fonts/">TikTok</a></li>
+        <li><strong>Practice text generation</strong> - Generate placeholder text for design mockups, UI testing, and document templates</li>
+        <li><strong>Software testing</strong> - Create large blocks of repeated text for stress-testing input fields, databases, and text processing systems</li>
+        <li><strong>Creative writing</strong> - Use repeated text as a creative device in poetry, visual art, and experimental writing</li>
+        <li><strong>Filling space</strong> - Generate filler text for presentations, documents, and layouts where you need to visualize text density</li>
+      </ul>
+
+      <h3>Advanced Options Explained</h3>
+      <p>The <strong>numbering</strong> option prefixes each repetition with its sequence number (1. Text, 2. Text, 3. Text...), useful for creating numbered lists automatically. The <strong>reverse every other</strong> option flips the character order of alternating repetitions, creating an interesting visual pattern. The <strong>random spacing</strong> option inserts random spaces between characters in each repetition, producing a scattered, aesthetic text effect similar to <a href="/tools/vaporwave-text-generator/">vaporwave text</a>.</p>
+
+      <p>For other text transformation tools, try our <a href="/">fancy text generator</a> with 50+ Unicode font styles, the <a href="/tools/backwards-text-generator/">backwards text generator</a> for reversed text, or the <a href="/tools/aesthetic-text-generator/">aesthetic text generator</a> for spaced-out text.</p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item"><button class="faq-question" type="button">What is a text repeater?</button><div class="faq-answer">A text repeater is a tool that takes any text you enter and duplicates it a specified number of times. You can choose different separators between each repetition (new line, space, comma, or custom text) and add optional features like numbering or reverse formatting.</div></div>
+      <div class="faq-item"><button class="faq-question" type="button">How many times can I repeat text?</button><div class="faq-answer">Our text repeater supports up to 10,000 repetitions. For very large numbers of repetitions, the output may take a moment to generate. Most practical uses require fewer than 1,000 repetitions.</div></div>
+      <div class="faq-item"><button class="faq-question" type="button">Can I use the text repeater for social media?</button><div class="faq-answer">Yes! The text repeater is commonly used to create repeated text for social media posts, comments, and messages. Simply enter your text, set the number of repetitions and separator, then copy the output and paste it wherever you need it.</div></div>
+    </section>
+
+    <section class="related-tools">
+      <h2>Related Tools</h2>
+      <div class="tool-grid">
+        <a href="/" class="tool-link-card"><h3>Fancy Text Generator</h3><p>All 50+ font styles in one place</p></a>
+        <a href="/tools/vaporwave-text-generator/" class="tool-link-card"><h3>Vaporwave Text Generator</h3><p>Full-width spaced aesthetic text</p></a>
+        <a href="/tools/backwards-text-generator/" class="tool-link-card"><h3>Backwards Text Generator</h3><p>Reverse and flip text backwards</p></a>
+        <a href="/tools/invisible-text-generator/" class="tool-link-card"><h3>Invisible Text Generator</h3><p>Generate invisible Unicode characters</p></a>
+        <a href="/tools/aesthetic-text-generator/" class="tool-link-card"><h3>Aesthetic Text Generator</h3><p>Wide dreamy aesthetic text styles</p></a>
+        <a href="/tools/font-changer/" class="tool-link-card"><h3>Font Changer</h3><p>Change text font instantly online</p></a>
+      </div>
+    </section>
+
+    <section class="related-guides" style="margin-top:2rem;padding:1.5rem;background:#f8f7ff;border-radius:12px;border:1px solid #e8e5f0;">
+      <h3 style="margin:0 0 1rem;color:#7c3aed;font-size:1.1rem;">Further Reading</h3>
+      <div style="display:grid;gap:0.75rem;">
+    <a href="/platforms/linkedin-fonts/" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;background:#fff;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e5e7eb;transition:border-color 0.2s;">
+      <span style="font-size:1.2rem;">📖</span>
+      <span><strong style="color:#7c3aed;">LinkedIn Font Generator</strong><br><small style="color:#666;">Bold, italic & fancy fonts for LinkedIn</small></span>
+    </a>
+        <a href="/guides/how-to-use-fancy-text/" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;background:#fff;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e5e7eb;transition:border-color 0.2s;"><span style="font-size:1.2rem;">📖</span><span><strong style="color:#7c3aed;">How to Use Fancy Text</strong><br><small style="color:#666;">creative text repetition techniques</small></span></a>
+        <a href="/guides/best-fonts-for-social-media/" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;background:#fff;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e5e7eb;transition:border-color 0.2s;"><span style="font-size:1.2rem;">📖</span><span><strong style="color:#7c3aed;">Best Fonts for Social Media</strong><br><small style="color:#666;">text effects that stand out on social media</small></span></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-col"><h4>Font Tools</h4><ul><li><a href="/tools/cursive-text-generator/">Cursive Generator</a></li><li><a href="/tools/bold-text-generator/">Bold Generator</a></li><li><a href="/tools/italic-text-generator/">Italic Generator</a></li><li><a href="/tools/gothic-text-generator/">Gothic Generator</a></li><li><a href="/tools/zalgo-text-generator/">Zalgo Generator</a></li><li><a href="/tools/bubble-text-generator/">Bubble Generator</a></li><li><a href="/tools/">View All Tools</a></li></ul></div><div class="footer-col"><h4>More Tools</h4><ul><li><a href="/tools/vaporwave-text-generator/">Vaporwave Generator</a></li><li><a href="/tools/small-text-generator/">Small Text Generator</a></li><li><a href="/tools/underline-text-generator/">Underline Generator</a></li><li><a href="/tools/upside-down-text-generator/">Upside Down Text</a></li><li><a href="/tools/aesthetic-text-generator/">Aesthetic Generator</a></li><li><a href="/tools/discord-fonts/">Discord Fonts</a></li></ul></div><div class="footer-col"><h4>Platforms</h4><ul><li><a href="/platforms/instagram-fonts/">Instagram Fonts</a></li><li><a href="/platforms/tiktok-fonts/">TikTok Fonts</a></li><li><a href="/platforms/twitter-fonts/">Twitter/X Fonts</a></li><li><a href="/platforms/facebook-fonts/">Facebook Fonts</a></li><li><a href="/platforms/discord-text-formatting/">Discord Formatting</a></li></ul></div><div class="footer-col"><h4>Guides</h4><ul><li><a href="/guides/how-to-use-fancy-text/">How to Use Fancy Text</a></li><li><a href="/guides/unicode-fonts-explained/">Unicode Fonts Explained</a></li><li><a href="/guides/best-fonts-for-social-media/">Best Fonts for Social Media</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 FancyTextPaste.com - Free Fancy Text Generator.</p></div></div></footer>
+
+<script>
+(function() {
+  'use strict';
+
+  var repeatInput = document.getElementById('repeat-input');
+  var repeatCount = document.getElementById('repeat-count');
+  var separatorSelect = document.getElementById('separator-select');
+  var customSepWrapper = document.getElementById('custom-sep-wrapper');
+  var customSeparator = document.getElementById('custom-separator');
+  var optNumbering = document.getElementById('opt-numbering');
+  var optReverse = document.getElementById('opt-reverse');
+  var optRandomSpacing = document.getElementById('opt-random-spacing');
+  var btnGenerate = document.getElementById('btn-generate');
+  var btnCopy = document.getElementById('btn-copy');
+  var outputBox = document.getElementById('output-box');
+  var outputStats = document.getElementById('output-stats');
+
+  separatorSelect.addEventListener('change', function() {
+    if (this.value === 'custom') {
+      customSepWrapper.classList.add('visible');
+    } else {
+      customSepWrapper.classList.remove('visible');
+    }
+  });
+
+  function getSeparator() {
+    switch (separatorSelect.value) {
+      case 'newline': return '\n';
+      case 'space': return ' ';
+      case 'comma': return ', ';
+      case 'custom': return customSeparator.value || ' ';
+      default: return '\n';
+    }
+  }
+
+  function addRandomSpacing(text) {
+    var result = '';
+    for (var i = 0; i < text.length; i++) {
+      result += text[i];
+      if (i < text.length - 1 && text[i] !== ' ') {
+        var spaces = Math.floor(Math.random() * 3);
+        for (var j = 0; j < spaces; j++) result += ' ';
+      }
+    }
+    return result;
+  }
+
+  function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+
+  function generate() {
+    var text = repeatInput.value;
+    if (!text) { outputBox.textContent = ''; outputStats.textContent = ''; return; }
+
+    var count = parseInt(repeatCount.value, 10);
+    if (isNaN(count) || count < 1) count = 1;
+    if (count > 10000) count = 10000;
+
+    var sep = getSeparator();
+    var useNumbering = optNumbering.checked;
+    var useReverse = optReverse.checked;
+    var useRandomSpacing = optRandomSpacing.checked;
+
+    var parts = [];
+    for (var i = 0; i < count; i++) {
+      var line = text;
+      if (useReverse && i % 2 === 1) {
+        line = reverseString(line);
+      }
+      if (useRandomSpacing) {
+        line = addRandomSpacing(line);
+      }
+      if (useNumbering) {
+        line = (i + 1) + '. ' + line;
+      }
+      parts.push(line);
+    }
+
+    var result = parts.join(sep);
+    outputBox.textContent = result;
+    outputStats.textContent = result.length + ' chars | ' + count + ' repetitions';
+  }
+
+  btnGenerate.addEventListener('click', generate);
+
+  // Auto-generate on input changes
+  repeatInput.addEventListener('input', generate);
+  repeatCount.addEventListener('input', generate);
+  separatorSelect.addEventListener('change', generate);
+  customSeparator.addEventListener('input', generate);
+  optNumbering.addEventListener('change', generate);
+  optReverse.addEventListener('change', generate);
+  optRandomSpacing.addEventListener('change', generate);
+
+  btnCopy.addEventListener('click', function() {
+    var text = outputBox.textContent;
+    if (!text) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() {}).catch(function() {});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+    btnCopy.textContent = 'Copied!';
+    btnCopy.classList.add('copied');
+    setTimeout(function() {
+      btnCopy.textContent = 'Copy';
+      btnCopy.classList.remove('copied');
+    }, 1500);
+  });
+
+  // FAQ toggle
+  document.querySelectorAll('.faq-question').forEach(function(b) {
+    b.addEventListener('click', function() { this.parentElement.classList.toggle('open'); });
+  });
+
+  // Mobile menu
+  var t = document.getElementById('mobile-menu-toggle');
+  var n = document.getElementById('main-nav');
+  if (t && n) { t.addEventListener('click', function() { n.classList.toggle('open'); }); }
+
+  // Initialize
+  generate();
+})();
+</script>
+</body>
+</html>

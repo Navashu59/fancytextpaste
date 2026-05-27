@@ -1,0 +1,24 @@
+# FancyTextPaste.com
+
+> Free Unicode text generators for social media, messaging, and creative writing.
+
+FancyTextPaste converts your text into Unicode characters that display as styled text on any platform. No fonts are installed — the characters themselves are styled. Works on Instagram, Twitter/X, LinkedIn, Facebook, Discord, and all messaging apps.
+
+## Text Generators
+
+- [Bold Text Generator](https://fancytextpaste.com/tools/bold-text-generator/): Convert text to 𝗯𝗼𝗹𝗱 Unicode (sans-serif, serif, italic variants)
+- [Cursive Text Generator](https://fancytextpaste.com/tools/cursive-text-generator/): Convert text to 𝒸𝓊𝓇𝓈𝒾𝓋𝑒 script
+- [Strikethrough Generator](https://fancytextpaste.com/tools/strikethrough-generator/): Add s̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ to text
+- [Zalgo Text Generator](https://fancytextpaste.com/tools/zalgo-text-generator/): Create g̸̢̛l̴̨̛i̶̡t̷c̵̢h̶̡ text
+- [Small Text Generator](https://fancytextpaste.com/tools/small-text-generator/): Convert to ˢᵐᵃˡˡ superscript text
+- [Aesthetic Text Generator](https://fancytextpaste.com/tools/aesthetic-text-generator/): Convert to ａｅｓｔｈｅｔｉｃ fullwidth text
+
+## Platform-Specific
+
+- [LinkedIn Font Generator](https://fancytextpaste.com/platforms/linkedin-fonts/): Bold, italic, and special characters for LinkedIn profiles
+- [Instagram Font Generator](https://fancytextpaste.com/platforms/instagram-fonts/): Styled text for Instagram bios and captions
+
+## Guides
+
+- [How Zalgo Text Works](https://fancytextpaste.com/guides/how-zalgo-text-works/): Unicode combining characters explained
+- [Gothic Text History](https://fancytextpaste.com/guides/gothic-text-history/): Origins of blackletter typography
