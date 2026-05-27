@@ -16,6 +16,9 @@ Actions:
 - Copied the current deployable static site into `public/`.
 - Added GitHub Actions workflow for Cloudflare Pages deployment from `public/`.
 - Added deployment documentation and this operations log.
+- Optimized wave-1 recovery pages: homepage, bold text generator, Instagram fonts, italic text generator, and strikethrough text generator.
+- Repaired stale internal links from the italic page to existing small-text and vaporwave pages.
+- Added 301 redirects for historical GSC URLs `/fonts-copy-paste/` and `/guides/how-to-create-glitch-text/`.
 
 Data baseline:
 
