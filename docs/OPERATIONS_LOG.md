@@ -31,3 +31,27 @@ Initial diagnosis:
 - The site had historical exposure in March and early April but almost no recent GSC visibility.
 - The first wave should be recovery and cleanup, not broad expansion.
 - Highest-priority pages for wave 1 are homepage, bold text generator, Instagram fonts, italic text generator, and strikethrough text generator.
+
+## 2026-05-27 - Wave 1 Deploy Verified
+
+Content changes deployed:
+
+- Commit `8594008` optimized the wave-1 recovery pages and historical redirects.
+- GitHub Actions run `26505460750` completed successfully.
+- Live verification confirmed updated titles and `dateModified` value `2026-05-27` on the homepage, bold text generator, Instagram fonts, italic text generator, and strikethrough text generator.
+- Live verification confirmed 301 redirects:
+  - `/fonts-copy-paste/` -> `/`
+  - `/guides/how-to-create-glitch-text/` -> `/tools/glitch-text-generator/`
+
+Deployment boundary:
+
+- Canonical source is `/Users/bluepha/fancytextpaste/repo/public`.
+- Canonical GitHub repo is `Navashu59/fancytextpaste`.
+- Canonical deployment is GitHub Actions to Cloudflare Pages project `fancytextpaste`.
+- The old monorepo deploy path now skips `fancytextpaste` and prints the canonical source/deploy route.
+
+Known follow-up:
+
+- GitHub Actions reported Node.js 20 deprecation warnings for `actions/checkout@v4` and `cloudflare/wrangler-action@v3`; upgrade workflow/action versions or opt into Node 24 in a later maintenance pass.
+- Observe GSC for 7-14 days before adding new support pages.
+- Compare impressions, clicks, CTR, average position, indexed URL count, and query/page distribution against the 2026-02-24 to 2026-05-25 baseline.
