@@ -4,6 +4,8 @@
 
 - Index pages refreshed: 75
 - Public templates moved out of crawlable output: yes
+- Canonical sitemap URLs after cleanup: 73
+- Legacy redirect compatibility pages excluded from sitemap: `/tools/invisible-text/`, `/tools/superscript-subscript/`
 - Method: page-intent SERP gap module added to every index page, with platform/tool/guide-specific compatibility, readability, searchability, accessibility, and next-page guidance.
 
 ## Why This Was Done

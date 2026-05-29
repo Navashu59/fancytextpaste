@@ -71,7 +71,7 @@ Scope:
 Validation:
 
 - 75 index pages.
-- 75 sitemap URLs.
+- 73 canonical sitemap URLs; `/tools/invisible-text/` and `/tools/superscript-subscript/` are legacy redirect compatibility pages and are excluded from the sitemap.
 - 76 HTML files including `404.html`.
 - 76 HTML files have parseable JSON-LD.
 - 0 broken internal links.
