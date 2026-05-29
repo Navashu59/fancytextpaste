@@ -65,7 +65,7 @@ Scope:
 - Moved crawlable HTML templates out of `public/templates/` into `source-templates/public-templates-removed-2026-05-29/`.
 - Fixed the canonical-tag example on `/guides/unicode-vs-ascii-vs-html-entities/` so it no longer appears as a broken local link.
 - Added JSON-LD to `404.html`.
-- Rebuilt `public/sitemap.xml` so it contains all 75 index pages, including `/tools/invisible-text/` and `/tools/superscript-subscript/`.
+- Rebuilt `public/sitemap.xml` with 73 canonical URLs. Legacy redirect compatibility pages `/tools/invisible-text/` and `/tools/superscript-subscript/` are intentionally excluded.
 - Added the execution report at `docs/SERP_GAP_ALL_PAGES_2026-05-29.md`.
 
 Validation:
@@ -84,3 +84,36 @@ Next observation plan:
 - Watch whether impressions recover beyond the recent 28-day near-zero baseline.
 - Pay special attention to LinkedIn, italic, strikethrough, bold, Instagram, and homepage queries.
 - Do not add more broad font-style pages until GSC shows which refreshed clusters regain impressions.
+
+## 2026-05-29 - GSC Recrawl Requests
+
+Actions:
+
+- Resubmitted `https://fancytextpaste.com/sitemap.xml` in Google Search Console.
+- Requested URL Inspection indexing for 10 priority refreshed pages:
+  - `https://fancytextpaste.com/`
+  - `https://fancytextpaste.com/platforms/linkedin-fonts/`
+  - `https://fancytextpaste.com/tools/bold-text-generator/`
+  - `https://fancytextpaste.com/tools/italic-text-generator/`
+  - `https://fancytextpaste.com/tools/strikethrough-text-generator/`
+  - `https://fancytextpaste.com/platforms/instagram-fonts/`
+  - `https://fancytextpaste.com/tools/cursive-text-generator/`
+  - `https://fancytextpaste.com/tools/gothic-text-generator/`
+  - `https://fancytextpaste.com/guides/unicode-fonts-explained/`
+  - `https://fancytextpaste.com/guides/linkedin-text-formatting-guide/`
+
+Validation:
+
+- GSC automation reported sitemap submission success.
+- GSC automation reported indexing request success for all 10 priority URLs.
+- Local sitemap contains 73 canonical URLs.
+- Live redirect checks confirmed:
+  - `/tools/invisible-text/` -> `/tools/invisible-text-generator/`
+  - `/tools/superscript-subscript/` -> `/tools/superscript-subscript-generator/`
+
+Next observation plan:
+
+- Check GSC Page Indexing and sitemap processing after 3-7 days.
+- Compare GSC Performance after 7-14 days against the post-refresh baseline.
+- Prioritize follow-up by query/page signals: impressions first, then position movement, CTR, and click recovery.
+- Do not request indexing for legacy redirect URLs; keep them as redirects and excluded from the sitemap.
