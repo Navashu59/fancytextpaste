@@ -55,3 +55,32 @@ Known follow-up:
 - GitHub Actions reported Node.js 20 deprecation warnings for `actions/checkout@v4` and `cloudflare/wrangler-action@v3`; upgrade workflow/action versions or opt into Node 24 in a later maintenance pass.
 - Observe GSC for 7-14 days before adding new support pages.
 - Compare impressions, clicks, CTR, average position, indexed URL count, and query/page distribution against the 2026-02-24 to 2026-05-25 baseline.
+
+## 2026-05-29 - Full-Site SERP Gap Refresh
+
+Scope:
+
+- Applied the SERP gap refresh method to all 75 index pages.
+- Added a marked page-intent section to every index page: `data-serp-gap-refresh="2026-05-29"`.
+- Moved crawlable HTML templates out of `public/templates/` into `source-templates/public-templates-removed-2026-05-29/`.
+- Fixed the canonical-tag example on `/guides/unicode-vs-ascii-vs-html-entities/` so it no longer appears as a broken local link.
+- Added JSON-LD to `404.html`.
+- Rebuilt `public/sitemap.xml` so it contains all 75 index pages, including `/tools/invisible-text/` and `/tools/superscript-subscript/`.
+- Added the execution report at `docs/SERP_GAP_ALL_PAGES_2026-05-29.md`.
+
+Validation:
+
+- 75 index pages.
+- 75 sitemap URLs.
+- 76 HTML files including `404.html`.
+- 76 HTML files have parseable JSON-LD.
+- 0 broken internal links.
+- All 75 index pages include the 2026-05-29 SERP gap marker.
+- Browser smoke test passed on homepage, `/platforms/linkedin-fonts/`, `/tools/italic-text-generator/`, and mobile `/tools/bold-text-generator/`.
+
+Next observation plan:
+
+- Recheck GSC after deployment and compare against the 2026-02-24 to 2026-05-25 baseline.
+- Watch whether impressions recover beyond the recent 28-day near-zero baseline.
+- Pay special attention to LinkedIn, italic, strikethrough, bold, Instagram, and homepage queries.
+- Do not add more broad font-style pages until GSC shows which refreshed clusters regain impressions.
