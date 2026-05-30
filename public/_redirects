@@ -5,8 +5,6 @@ https://www.fancytextpaste.com/* https://fancytextpaste.com/:splat 301
 /tools/fancy-text-for-twitter/ /platforms/twitter-fonts/ 301
 /tools/invisible-text/ /tools/invisible-text-generator/ 301
 /tools/superscript-subscript/ /tools/superscript-subscript-generator/ 301
-/fonts-copy-paste/ / 301
-/guides/how-to-create-glitch-text/ /tools/glitch-text-generator/ 301
 /guides/accessibility-and-fancy-text /guides/accessibility-and-fancy-text/ 301
 /guides/best-fonts-for-social-media /guides/best-fonts-for-social-media/ 301
 /guides/complete-unicode-text-styles-list /guides/complete-unicode-text-styles-list/ 301
@@ -75,3 +73,8 @@ https://www.fancytextpaste.com/* https://fancytextpaste.com/:splat 301
 /tools/wingdings-translator /tools/wingdings-translator/ 301
 /tools/word-counter /tools/word-counter/ 301
 /tools/zalgo-text-generator /tools/zalgo-text-generator/ 301
+
+# 新增重定向规则 - bold-text 路径修复
+/tools/bold-text /tools/bold-text-generator/ 301
+/tools/bold-text/ /tools/bold-text-generator/ 301
+/tools/bold-text/* /tools/bold-text-generator/ 301

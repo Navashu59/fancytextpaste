@@ -1,106 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9032385955610751" crossorigin="anonymous"></script>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Small Text Generator (ˢᵐᵃˡˡ ᵗᵉˣᵗ) - Tiny Font Copy & Paste</title>
-<meta name="description" content="Free small text generator. Create tiny superscript, subscript, and small caps text using Unicode.">
-<link rel="canonical" href="https://fancytextpaste.com/tools/small-text-generator/">
-<meta property="og:title" content="Small Text Generator - Tiny Superscript & Small Caps">
-<meta property="og:description" content="Generate tiny small text, superscript, subscript, and small caps. Free copy and paste small font maker.">
-<meta property="og:url" content="https://fancytextpaste.com/tools/small-text-generator/">
-<meta property="og:type" content="website">
-    <meta property="og:image" content="https://fancytextpaste.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Small Text Generator (ˢᵐᵃˡˡ ᵗᵉˣᵗ) - Tiny Font Copy & Paste">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="stylesheet" href="/assets/css/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Small Text Generator","url":"https://fancytextpaste.com/tools/small-text-generator/","description":"Free small text generator with superscript, subscript, and small caps styles.","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://fancytextpaste.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://fancytextpaste.com/tools/"},{"@type":"ListItem","position":3,"name":"Small Text Generator","item":"https://fancytextpaste.com/tools/small-text-generator/"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I make small text?","acceptedAnswer":{"@type":"Answer","text":"Use our small text generator to convert regular text into Unicode superscript, subscript, or small caps characters. These are special Unicode code points that appear smaller than regular text."}},{"@type":"Question","name":"What is the difference between superscript, subscript, and small caps?","acceptedAnswer":{"@type":"Answer","text":"Superscript characters appear raised above the baseline (like exponents). Subscript characters appear below the baseline. Small caps are uppercase-shaped letters at the height of lowercase letters. Each uses different Unicode character sets."}},{"@type":"Question","name":"Do all letters have small versions?","acceptedAnswer":{"@type":"Answer","text":"Not all letters have Unicode superscript or subscript versions. Superscript covers most letters, while subscript is more limited. Small caps covers nearly all lowercase letters. Characters without small versions will remain at normal size."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Small Text Generator (ˢᵐᵃˡˡ ᵗᵉˣᵗ)","author":{"@type":"Person","name":"Alex Chen","url":"https://fancytextpaste.com/about/"},"publisher":{"@type":"Organization","name":"fancytextpaste","url":"https://fancytextpaste.com/"},"datePublished":"2026-02-15","dateModified":"2026-05-29"}
-</script>
-<style>.eeat-byline{display:flex;align-items:center;gap:8px;font-size:0.85rem;color:#666;margin:8px 0 0;flex-wrap:wrap}.eeat-byline .author{font-weight:500;color:#444}.eeat-byline .sep{color:#ccc}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Text Generator - Create Tiny Text Online | FancyTextPaste</title>
+    <meta name="description" content="Generate small text for social media, designs, and creative projects. Convert normal text to tiny superscript and subscript letters instantly.">
+    <meta name="keywords" content="small text generator, tiny text, small letters, superscript, subscript, small font, mini text">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #20b2aa;
+            text-decoration: none;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #20b2aa 0%, #1a928b 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        /* Tool Section */
+        .tool-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .tool-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .input-area {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .input-group label {
+            font-weight: 500;
+            color: #555;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #20b2aa;
+        }
+        
+        .style-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .style-option {
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .style-option:hover {
+            background: #f8f9fa;
+        }
+        
+        .style-option.active {
+            border-color: #20b2aa;
+            background: #e0f7f6;
+        }
+        
+        .style-name {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .style-preview {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .btn {
+            background: #20b2aa;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #1a928b;
+        }
+        
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .btn-secondary:hover {
+            background: #e9ecef;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .output-area {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .output-box {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 1.5rem;
+            min-height: 200px;
+            font-size: 0.8rem;
+            line-height: 1.8;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        
+        .comparison {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f0f8ff;
+            border-radius: 5px;
+            border-left: 4px solid #20b2aa;
+        }
+        
+        .comparison-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Content Section */
+        .content-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .content-section h2 {
+            color: #20b2aa;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .content-section h3 {
+            color: #333;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .content-section p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .content-section ul, .content-section ol {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .example-card {
+            padding: 1rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background: #f8f9fa;
+        }
+        
+        .example-input {
+            font-family: monospace;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .example-output {
+            font-size: 0.8rem;
+            color: #20b2aa;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: #20b2aa;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2d3748;
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><a href="/" class="site-logo"><span class="logo-icon">Ff</span> FancyTextPaste</a><button id="mobile-menu-toggle" aria-label="Toggle menu">&#9776;</button><nav class="main-nav" id="main-nav"><a href="/">Generator</a><a href="/tools/" class="active">All Tools</a><a href="/platforms/">Platforms</a><a href="/guides/">Guides</a></nav></div></header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">FancyTextPaste</a>
+                <nav>
+                    <a href="/tools" style="color: #666; text-decoration: none; margin-left: 1rem;">Tools</a>
+                    <a href="/fonts" style="color: #666; text-decoration: none; margin-left: 1rem;">Fonts</a>
+                    <a href="/about" style="color: #666; text-decoration: none; margin-left: 1rem;">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<nav class="breadcrumbs"><div class="container"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Tools</a></li><li><span>Small Text Generator</span></li></ol></div></nav>
-
-<section class="tool-hero"><div class="container">
-  <h1>Small Text Generator</h1>
-  <p class="subtitle">Create tiny text with superscript, subscript, and small caps Unicode characters. Copy and paste small fonts anywhere.</p>
-    <div class="eeat-byline"><span class="author">By Alex Chen</span><span class="sep">|</span><time datetime="2026-05-29">Updated May 29, 2026</time></div>
-  <div class="input-wrapper">
-    <textarea id="text-input" placeholder="Type your text here..." aria-label="Enter text to make small">Hello World</textarea>
-    <div class="input-controls"><span id="char-count">11 characters</span><button id="btn-clear" type="button">Clear</button></div>
-  </div>
-</div></section>
-
-<main class="main-content"><div class="container">
-  <div id="font-preview" class="font-preview-grid" data-filter="small" data-dedicated="true"></div>
-
-  <section class="seo-content">
-    <h2>Small Text Generator - Tiny Fonts Copy and Paste</h2>
-    <p>Our small text generator converts your regular-sized text into tiny Unicode characters that appear smaller than standard text. With three distinct small text styles available -- superscript, subscript, and small caps -- you can create unique-looking text for social media bios, creative posts, and anywhere you want compact, eye-catching text.</p>
-
-    <h3>Three Small Text Styles</h3>
-    <p><strong>Superscript</strong> (ˢᵘᵖᵉʳˢᶜʳⁱᵖᵗ) positions characters above the normal text baseline, similar to mathematical exponents. <strong>Subscript</strong> (ₛᵤᵦₛ꜀ᵣᵢₚₜ) places characters below the baseline, like chemical formulas. <strong>Small Caps</strong> (Sᴍᴀʟʟ Cᴀᴘꜱ) creates uppercase-shaped letters at lowercase height, producing a sophisticated, typographic look commonly seen in printed materials.</p>
-
-    <h3>Perfect for Social Media Bios</h3>
-    <p>Small text is incredibly popular for <a href="/platforms/instagram-fonts/">Instagram bios</a> and <a href="/platforms/tiktok-fonts/">TikTok profiles</a> because it creates visual contrast. You can use normal-sized text for your main message and small text for secondary details, creating a clean, organized bio layout that stands out from profiles using only regular text.</p>
-
-    <h3>Limitations to Know</h3>
-    <p>Not every letter has a Unicode superscript or subscript equivalent. Our generator uses the best available match for each character, but some letters (particularly in subscript) may remain at normal size. Small caps offers the most complete coverage of the three styles. Digits 0-9 are well-supported in both superscript and subscript.</p>
-
-    <p>Explore more text styles in our <a href="/">main fancy text generator</a>, or try <a href="/tools/bubble-text-generator/">bubble text</a> and <a href="/tools/cursive-text-generator/">cursive text</a> for other creative options.</p>
-  </section>
-
-  <section class="faq-section"><h2>Frequently Asked Questions</h2>
-    <div class="faq-item"><button class="faq-question" type="button">How do I make small text?</button><div class="faq-answer">Use our small text generator to convert regular text into Unicode superscript, subscript, or small caps characters.</div></div>
-    <div class="faq-item"><button class="faq-question" type="button">What is the difference between superscript, subscript, and small caps?</button><div class="faq-answer">Superscript appears raised above the baseline. Subscript appears below the baseline. Small caps are uppercase-shaped letters at lowercase height.</div></div>
-    <div class="faq-item"><button class="faq-question" type="button">Do all letters have small versions?</button><div class="faq-answer">Not all letters have Unicode superscript or subscript versions. Small caps covers nearly all lowercase letters. Characters without small versions remain at normal size.</div></div>
-  </section>
-
-    <section class="seo-content serp-gap-refresh" data-serp-gap-refresh="2026-05-29">
-      <h2>What to Know Before You Copy and Paste</h2>
-      <p>This tool page is designed to answer the practical questions people usually have after landing on a small text generator result: what to copy, where it works, what can break, and which related text style should be used instead.</p>
-      <h3>Best Use Case</h3>
-      <p>Use this page for general fancy text generation, copy-paste fonts, and Unicode style selection. The goal is not just to make text look different, but to help you choose a style that fits the field, platform, audience, and copy-paste workflow.</p>
-      <h3>What To Check Before You Paste</h3>
-      <ul>
-        <li><strong>Compatibility:</strong> preview the output on the platform where you will use it, especially on mobile.</li>
-        <li><strong>Readability:</strong> use decorative Unicode for short emphasis, names, labels, and separators rather than long paragraphs.</li>
-        <li><strong>Searchability:</strong> keep hashtags, handles, important keywords, and contact information in plain text when discovery matters.</li>
-        <li><strong>Accessibility:</strong> screen readers and older devices may announce or display styled Unicode differently from normal text.</li>
-      </ul>
-      <h3>Common Questions This Page Answers</h3>
-      <p>This page covers which style to choose, where it works, accessibility and searchability warnings. These details help you choose the right text style, avoid copy-paste problems, and finish the job without testing every related tool.</p>
-      <h3>Practical Recommendation</h3>
-      <p>Use fancy text for visual emphasis and plain text for keywords, links, hashtags, and anything users need to search.</p>
-      <h3>Helpful Next Pages</h3>
-      <ul><li><a href="/">Fancy Text Generator</a></li><li><a href="/tools/bold-text-generator/">Bold Text Generator</a></li><li><a href="/tools/italic-text-generator/">Italic Text Generator</a></li><li><a href="/tools/strikethrough-text-generator/">Strikethrough Text Generator</a></li></ul>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Small Text Generator</h1>
+            <p>Create tiny text for social media, designs, and creative projects. Convert normal text to superscript and subscript letters instantly.</p>
+        </div>
     </section>
 
-  <section class="related-tools"><h2>Related Tools</h2><div class="tool-grid">
-    <a href="/" class="tool-link-card"><h3>Fancy Text Generator</h3><p>All 50+ font styles</p></a>
-    <a href="/tools/bubble-text-generator/" class="tool-link-card"><h3>Bubble Text Generator</h3><p>Circled letter characters</p></a>
-    <a href="/tools/bold-text-generator/" class="tool-link-card"><h3>Bold Text Generator</h3><p>Bold Unicode characters</p></a>
-    <a href="/tools/cursive-text-generator/" class="tool-link-card"><h3>Cursive Text Generator</h3><p>Elegant script fonts</p></a>
-  </div></section>
-</div></main>
+    <!-- Tool Section -->
+    <section class="tool-section">
+        <div class="container">
+            <div class="tool-grid">
+                <div class="input-area">
+                    <div class="input-group">
+                        <label for="inputText">Enter your text:</label>
+                        <textarea id="inputText" placeholder="Type your text here...">Create small text for social media!</textarea>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Select small text style:</label>
+                        <div class="style-options">
+                            <div class="style-option active" data-style="superscript" onclick="selectStyle('superscript')">
+                                <div class="style-name">Superscript</div>
+                                <div class="style-preview">ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾ</div>
+                            </div>
+                            <div class="style-option" data-style="subscript" onclick="selectStyle('subscript')">
+                                <div class="style-name">Subscript</div>
+                                <div class="style-preview">ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ</div>
+                            </div>
+                            <div class="style-option" data-style="tiny" onclick="selectStyle('tiny')">
+                                <div class="style-name">Tiny Caps</div>
+                                <div class="style-preview">ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘ</div>
+                            </div>
+                            <div class="style-option" data-style="circled" onclick="selectStyle('circled')">
+                                <div class="style-name">Circled</div>
+                                <div class="style-preview">ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅ</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn" onclick="generateSmallText()">Generate Small Text</button>
+                        <button class="btn btn-secondary" onclick="copyToClipboard()">Copy to Clipboard</button>
+                        <button class="btn btn-secondary" onclick="clearText()">Clear All</button>
+                    </div>
+                </div>
+                
+                <div class="output-area">
+                    <div class="input-group">
+                        <label>Small text output:</label>
+                        <div class="output-box" id="outputBox">
+                            ᶜʳᵉᵃᵗᵉ ˢᵐᵃˡˡ ᵗᵉˣᵗ ᶠᵒʳ ˢᵒᶜⁱᵃˡ ᵐᵉᵈⁱᵃ!
+                        </div>
+                    </div>
+                    
+                    <div class="comparison">
+                        <h4>Size Comparison</h4>
+                        <div class="comparison-item">
+                            <span>Normal text:</span>
+                            <span id="normalText">Create small text</span>
+                        </div>
+                        <div class="comparison-item">
+                            <span>Small text:</span>
+                            <span id="smallText">ᶜʳᵉᵃᵗᵉ ˢᵐᵃˡˡ ᵗᵉˣᵗ</span>
+                        </div>
+                        <div class="comparison-item">
+                            <span>Size reduction:</span>
+                            <span id="sizeReduction">~30% smaller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>What is Small Text?</h2>
+            
+            <p>Small text refers to characters that are smaller than standard text, typically created using Unicode superscript, subscript, or other small letter variants. These characters appear at a reduced size and are often positioned above or below the normal text baseline.</p>
+            
+            <h3>Types of Small Text</h3>
+            
+            <h4>1. Superscript Text</h4>
+            <p>Superscript characters appear above the normal text line. Commonly used for:</p>
+            <ul>
+                <li><strong>Mathematical exponents</strong> - x², y³, 10⁴</li>
+                <li><strong>Chemical formulas</strong> - H₂O, CO₂</li>
+                <li><strong>Footnotes and references</strong> - Text¹, Reference²</li>
+                <li><strong>Ordinal indicators</strong> - 1ˢᵗ, 2ⁿᵈ, 3ʳᵈ</li>
+            </ul>
+            
+            <h4>2. Subscript Text</h4>
+            <p>Subscript characters appear below the normal text line. Commonly used for:</p>
+            <ul>
+                <li><strong>Chemical formulas</strong> - H₂O, CH₄</li>
+                <li><strong>Mathematical indices</strong> - a₁, b₂, xₙ</li>
+                <li><strong>Base numbering</strong> - 10₂ (binary), 16₁₆ (hexadecimal)</li>
+            </ul>
+            
+            <h4>3. Tiny Caps</h4>
+            <p>Small capital letters that are smaller than regular capitals but maintain capital letter forms:</p>
+            <ul>
+                <li><strong>Stylistic text</strong> - ᴀᴇsᴛʜᴇᴛɪᴄ ᴛᴇxᴛ</li>
+                <li><strong>Abbreviations</strong> - ᴜ.ꜱ.ᴀ., ᴘ.ʜ.ᴅ.</li>
+                <li><strong>Design elements</strong> - Headers and titles</li>
+            </ul>
+            
+            <h4>4. Circled Letters</h4>
+            <p>Letters enclosed in circles, often used for:</p>
+            <ul>
+                <li><strong>Lists and numbering</strong> - ⓵, ⓶, ⓷ or Ⓐ, Ⓑ, Ⓒ</li>
+                <li><strong>Graphic design</strong> - Logos and icons</li>
+                <li><strong>Special notations</strong> - Copyright symbols, trademarks</li>
+            </ul>
+            
+            <h3>How Small Text Works</h3>
+            <p>Small text uses Unicode characters from special blocks:</p>
+            <ul>
+                <li><strong>Superscript and Subscript Block</strong> (U+2070 to U+209F)</li>
+                <li><strong>Letterlike Symbols Block</strong> (U+2100 to U+214F)</li>
+                <li><strong>Enclosed Alphanumerics Block</strong> (U+2460 to U+24FF)</li>
+                <li><strong>Phonetic Extensions Block</strong> (U+1D00 to U+1D7F)</li>
+            </ul>
+            
+            <p>These characters are part of the Unicode standard, meaning they work across most modern devices and platforms without requiring special fonts.</p>
+            
+            <h3>Popular Uses for Small Text</h3>
+            
+            <div class="example-grid">
+                <div class="example-card">
+                    <div class="example-input">Social Media Bios:</div>
+                    <div class="example-output">ᴅɪɢɪᴛᴀʟ ᴄʀᴇᴀᴛᴏʀ ✨<br>ᴘʜᴏᴛᴏɢʀᴀᴘʜʏ & ᴅᴇsɪɢɴ</div>
+                </div>
+                <div class="example-card">
+                    <div class="example-input">Mathematical Notes:</div>
+                    <div class="example-output">x² + y² = z²<br>H₂O → 2H₂ + O₂</div>
+                </div>
+                <div class="example-card">
+                    <div class="example-input">Creative Headers:</div>
+                    <div class="example-output">ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɴᴇᴡ sᴛᴏʀᴇ!</div>
+                </div>
+                <div class="example-card">
+                    <div class="example-input">Chemical Formulas:</div>
+                    <div class="example-output">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O</div>
+                </div>
+            </div>
+            
+            <h4>1. Academic and Scientific Writing</h4>
+            <ul>
+                <li><strong>Research papers</strong> - Footnotes, chemical formulas, mathematical equations</li>
+                <li><strong>Textbooks</strong> - Subscripts for variables, superscripts for exponents</li>
+                <li><strong>Laboratory reports</strong> - Chemical notation, measurement units</li>
+            </ul>
+            
+            <h4>2. Digital Design and Social Media</h4>
+            <ul>
+                <li><strong>Instagram/TikTok bios</strong> - Create unique, eye-catching profiles</li>
+                <li><strong>Graphic design</strong> - Add stylistic elements to digital artwork</li>
+                <li><strong>Website headers</strong> - Create distinctive headings and titles</li>
+                <li><strong>Email signatures</strong> - Add professional yet creative touches</li>
+            </ul>
+            
+            <h4>3. Technical Documentation</h4>
+            <ul>
+                <li><strong>Programming documentation</strong> - Mathematical notation in comments</li>
+                <li><strong>Engineering specs</strong> - Dimensions, tolerances, formulas</li>
+                <li><strong>Scientific publications</strong> - Proper chemical and mathematical notation</li>
+            </ul>
+            
+            <h3>Tips for Using Small Text Effectively</h3>
+            
+            <h4>1. Maintain Readability</h4>
+            <p>Small text can be difficult to read, especially on small screens:</p>
+            <ul>
+                <li>Use sparingly - don't convert entire paragraphs</li>
+                <li>Test on different devices and screen sizes</li>
+                <li>Consider your audience's visual abilities</li>
+                <li>Provide alternative text for accessibility</li>
+            </ul>
+            
+            <h4>2. Platform Compatibility</h4>
+            <p>Most platforms support Unicode small text characters:</p>
+            <ul>
+                <li><strong>Excellent support</strong> - Instagram, Facebook, Twitter, WhatsApp</li>
+                <li><strong>Good support</strong> - TikTok, Discord, Slack</li>
+                <li><strong>Limited support</strong> - Some older email clients, specialized applications</li>
+            </ul>
+            
+            <h4>3. Context Matters</h4>
+            <p>Choose the right type of small text for your context:</p>
+            <ul>
+                <li><strong>Academic/scientific</strong> - Use proper superscript/subscript</li>
+                <li><strong>Creative/social</strong> - Use tiny caps or circled letters</li>
+                <li><strong>Technical</strong> - Use mathematically correct notation</li>
+            </ul>
+            
+            <h3>Frequently Asked Questions</h3>
+            
+            <h4>Q: Can I use small text in passwords?</h4>
+            <p>A: While technically possible, it's not recommended. Some systems may not recognize Unicode characters in passwords, potentially locking you out.</p>
+            
+            <h4>Q: Will small text work in printed materials?</h4>
+            <p>A: Yes, if the printer supports Unicode characters. Always test a small sample before large print runs.</p>
+            
+            <h4>Q: How do I type small text without a generator?</h4>
+            <p>A: On Windows: Alt+ codes; On Mac: Character Viewer; On mobile: Special keyboard apps. However, using a generator is much easier.</p>
+            
+            <h4>Q: Is small text accessible for screen readers?</h4>
+            <p>A: Most screen readers will read the characters, but may not convey the visual styling. For accessibility, consider providing plain text alternatives.</p>
+            
+            <h4>Q: Can I convert small text back to normal text?</h4>
+            <p>A: Our generator works one-way. To convert back, you'd need to manually replace each small character with its normal equivalent.</p>
+            
+            <h3>Conclusion</h3>
+            <p>Small text is a versatile tool for academic, creative, and technical applications. Whether you're writing scientific formulas, designing social media content, or creating technical documentation, small text adds precision and style to your writing.</p>
+            
+            <p>Remember: While small text is visually interesting, always prioritize readability and consider your audience's needs. Use it strategically to enhance communication rather than hinder it.</p>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FancyTextPaste</h3>
+                    <p>Free online text styling tools for creativity and communication.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Text Generators</h3>
+                    <ul class="footer-links">
+                        <li><a href="/bold-text">Bold Text Generator</a></li>
+                        <li><a href="/italic-text">Italic Text Generator</a></li>
+                        <li><a href="/cursive-text">Cursive Text Generator</a></li>
+                        <li><a href="/bubble-text">Bubble Text Generator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/unicode-guide">Unicode Guide</a></li>
+                        <li><a href="/accessibility">Accessibility Tips</a></li>
+                        <li><a href="/platform-compatibility">Platform Compatibility</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2026 FancyTextPaste. All rights reserved. This tool uses Unicode characters for cross-platform compatibility.</p>
+            </div>
+        </div>
+    </footer>
 
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-col"><h4>Font Tools</h4><ul><li><a href="/tools/cursive-text-generator/">Cursive Generator</a></li><li><a href="/tools/bold-text-generator/">Bold Generator</a></li><li><a href="/tools/italic-text-generator/">Italic Generator</a></li><li><a href="/tools/gothic-text-generator/">Gothic Generator</a></li><li><a href="/tools/zalgo-text-generator/">Zalgo Generator</a></li><li><a href="/tools/bubble-text-generator/">Bubble Generator</a></li><li><a href="/tools/">View All Tools</a></li></ul></div><div class="footer-col"><h4>More Tools</h4><ul><li><a href="/tools/vaporwave-text-generator/">Vaporwave Generator</a></li><li><a href="/tools/small-text-generator/">Small Text Generator</a></li><li><a href="/tools/underline-text-generator/">Underline Generator</a></li><li><a href="/tools/upside-down-text-generator/">Upside Down Text</a></li><li><a href="/tools/aesthetic-text-generator/">Aesthetic Generator</a></li><li><a href="/tools/discord-fonts/">Discord Fonts</a></li></ul></div><div class="footer-col"><h4>Platforms</h4><ul><li><a href="/platforms/instagram-fonts/">Instagram Fonts</a></li><li><a href="/platforms/tiktok-fonts/">TikTok Fonts</a></li><li><a href="/platforms/twitter-fonts/">Twitter/X Fonts</a></li><li><a href="/platforms/facebook-fonts/">Facebook Fonts</a></li><li><a href="/platforms/discord-text-formatting/">Discord Formatting</a></li></ul></div><div class="footer-col"><h4>Guides</h4><ul><li><a href="/guides/how-to-use-fancy-text/">How to Use Fancy Text</a></li><li><a href="/guides/unicode-fonts-explained/">Unicode Fonts Explained</a></li><li><a href="/guides/best-fonts-for-social-media/">Best Fonts for Social Media</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 FancyTextPaste.com - Free Fancy Text Generator.</p></div></div></footer>
-<script src="/assets/js/unicode-fonts.js"></script><script src="/assets/js/app.js"></script>
-<script>document.querySelectorAll('.faq-question').forEach(function(b){b.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});</script>
+    <script>
+        // Current selected style
+        let currentStyle = 'superscript';
+        
+        // Character mappings for different styles
+        const styleMaps = {
+            'superscript': {
+                'A': 'ᴬ', 'B': 'ᴮ', 'C': 'ᶜ', 'D': 'ᴰ', 'E': 'ᴱ', 'F': 'ᶠ', 'G': 'ᴳ',
+                'H': 'ᴴ', 'I': 'ᴵ', 'J': 'ᴶ', 'K': 'ᴷ', 'L': 'ᴸ', 'M': 'ᴹ', 'N': 'ᴺ',
+                'O': 'ᴼ', 'P': 'ᴾ', 'Q': 'ᵠ', 'R': 'ᴿ', 'S': 'ˢ', 'T': 'ᵀ', 'U': 'ᵁ',
+                'V': 'ⱽ', 'W': 'ᵂ', 'X': 'ˣ', 'Y': 'ʸ', 'Z': 'ᶻ',
+                'a': 'ᵃ', 'b': 'ᵇ', 'c': 'ᶜ', 'd': 'ᵈ', 'e': 'ᵉ', 'f': 'ᶠ', 'g': 'ᵍ',
+                'h': 'ʰ', 'i': 'ⁱ', 'j': 'ʲ', 'k': 'ᵏ', 'l': 'ˡ', 'm': 'ᵐ', 'n': 'ⁿ',
+                'o': 'ᵒ', 'p': 'ᵖ', 'q': 'ᑫ', 'r': 'ʳ', 's': 'ˢ', 't': 'ᵗ', 'u': 'ᵘ',
+                'v': 'ᵛ', 'w': 'ʷ', 'x': 'ˣ', 'y': 'ʸ', 'z': 'ᶻ',
+                '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶',
+                '7': '⁷', '8': '⁸', '9': '⁹', '+': '⁺', '-': '⁻', '=': '⁼', '(': '⁽',
+                ')': '⁾'
+            },
+            'subscript': {
+                'A': 'ₐ', 'B': 'ᵦ', 'C': '꜀', 'D': 'ᵈ', 'E': 'ₑ', 'F': 'ᶠ', 'G': 'ᵍ',
+                'H': 'ₕ', 'I': 'ᵢ', 'J': 'ⱼ', 'K': 'ₖ', 'L': 'ₗ', 'M': 'ₘ', 'N': 'ₙ',
+                'O': 'ₒ', 'P': 'ₚ', 'Q': 'ᵩ', 'R': 'ᵣ', 'S': 'ₛ', 'T': 'ₜ', 'U': 'ᵤ',
+                'V': 'ᵥ', 'W': 'w', 'X': 'ₓ', 'Y': 'ᵧ', 'Z': 'ᶻ',
+                'a': 'ₐ', 'b': 'ᵦ', 'c': '꜀', 'd': 'ᵈ', 'e': 'ₑ', 'f': 'ᶠ', 'g': 'ᵍ',
+                'h': 'ₕ', 'i': 'ᵢ', 'j': 'ⱼ', 'k': 'ₖ', 'l': 'ₗ', 'm': 'ₘ', 'n': 'ₙ',
+                'o': 'ₒ', 'p': 'ₚ', 'q': 'ᵩ', 'r': 'ᵣ', 's': 'ₛ', 't': 'ₜ', 'u': 'ᵤ',
+                'v': 'ᵥ', 'w': 'w', 'x': 'ₓ', 'y': 'ᵧ', 'z': 'ᶻ',
+                '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆',
+                '7': '₇', '8': '₈', '9': '₉', '+': '₊', '-': '₋', '=': '₌', '(': '₍',
+                ')': '₎'
+            },
+            'tiny': {
+                'A': 'ᴀ', 'B': 'ʙ', 'C': 'ᴄ', 'D': 'ᴅ', 'E': 'ᴇ', 'F': 'ꜰ', 'G': 'ɢ',
+                'H': 'ʜ', 'I': 'ɪ', 'J': 'ᴊ', 'K': 'ᴋ', 'L': 'ʟ', 'M': 'ᴍ', 'N': 'ɴ',
+                'O': 'ᴏ', 'P': 'ᴘ', 'Q': 'ǫ', 'R': 'ʀ', 'S': 's', 'T': 'ᴛ', 'U': 'ᴜ',
+                'V': 'ᴠ', 'W': 'ᴡ', 'X': 'x', 'Y': 'ʏ', 'Z': 'ᴢ',
+                'a': 'ᴀ', 'b': 'ʙ', 'c': 'ᴄ', 'd': 'ᴅ', 'e': 'ᴇ', 'f': 'ꜰ', 'g': 'ɢ',
+                'h': 'ʜ', 'i': 'ɪ', 'j': 'ᴊ', 'k': 'ᴋ', 'l': 'ʟ', 'm': 'ᴍ', 'n': 'ɴ',
+                'o': 'ᴏ', 'p': 'ᴘ', 'q': 'ǫ', 'r': 'ʀ', 's': 's', 't': 'ᴛ', 'u': 'ᴜ',
+                'v': 'ᴠ', 'w': 'ᴡ', 'x': 'x', 'y': 'ʏ', 'z': 'ᴢ'
+            },
+            'circled': {
+                'A': 'Ⓐ', 'B': 'Ⓑ', 'C': 'Ⓒ', 'D': 'Ⓓ', 'E': 'Ⓔ', 'F': 'Ⓕ', 'G': 'Ⓖ',
+                'H': 'Ⓗ', 'I': 'Ⓘ', 'J': 'Ⓙ', 'K': 'Ⓚ', 'L': 'Ⓛ', 'M': 'Ⓜ', 'N': 'Ⓝ',
+                'O': 'Ⓞ', 'P': 'Ⓟ', 'Q': 'Ⓠ', 'R': 'Ⓡ', 'S': 'Ⓢ', 'T': 'Ⓣ', 'U': 'Ⓤ',
+                'V': 'Ⓥ', 'W': 'Ⓦ', 'X': 'Ⓧ', 'Y': 'Ⓨ', 'Z': 'Ⓩ',
+                'a': 'ⓐ', 'b': 'ⓑ', 'c': 'ⓒ', 'd': 'ⓓ', 'e': 'ⓔ', 'f': 'ⓕ', 'g': 'ⓖ',
+                'h': 'ⓗ', 'i': 'ⓘ', 'j': 'ⓙ', 'k': 'ⓚ', 'l': 'ⓛ', 'm': 'ⓜ', 'n': 'ⓝ',
+                'o': 'ⓞ', 'p': 'ⓟ', 'q': 'ⓠ', 'r': 'ⓡ', 's': 'ⓢ', 't': 'ⓣ', 'u': 'ⓤ',
+                'v': 'ⓥ', 'w': 'ⓦ', 'x': 'ⓧ', 'y': 'ⓨ', 'z': 'ⓩ',
+                '0': '⓪', '1': '①', '2': '②', '3': '③', '4': '④', '5': '⑤', '6': '⑥',
+                '7': '⑦', '8': '⑧', '9': '⑨'
+            }
+        };
+        
+        // Select style
+        function selectStyle(style) {
+            currentStyle = style;
+            
+            // Update active state
+            document.querySelectorAll('.style-option').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelector(`[data-style="${style}"]`).classList.add('active');
+            
+            // Regenerate text with new style
+            generateSmallText();
+        }
+        
+        // Generate small text
+        function generateSmallText() {
+            const inputText = document.getElementById('inputText').value;
+            const styleMap = styleMaps[currentStyle];
+            let output = '';
+            
+            for (let i = 0; i < inputText.length; i++) {
+                const char = inputText[i];
+                const upperChar = char.toUpperCase();
+                const lowerChar = char.toLowerCase();
+                
+                if (styleMap[upperChar] && char === upperChar) {
+                    // Uppercase letter
+                    output += styleMap[upperChar];
+                } else if (styleMap[lowerChar] && char === lowerChar) {
+                    // Lowercase letter
+                    output += styleMap[lowerChar];
+                } else if (styleMap[char]) {
+                    // Number or symbol
+                    output += styleMap[char];
+                } else {
+                    // Non-mapped character (space, punctuation, etc.)
+                    output += char;
+                }
+            }
+            
+            // Update output box
+            document.getElementById('outputBox').textContent = output;
+            
+            // Update comparison
+            updateComparison(inputText, output);
+        }
+        
+        // Update size comparison
+        function updateComparison(normalText, smallText) {
+            document.getElementById('normalText').textContent = normalText.substring(0, 20) + (normalText.length > 20 ? '...' : '');
+            document.getElementById('smallText').textContent = smallText.substring(0, 20) + (smallText.length > 20 ? '...' : '');
+            
+            // Calculate approximate size reduction
+            const normalLength = normalText.length;
+            const smallLength = smallText.length;
+            const reduction = normalLength > 0 ? Math.round((1 - (smallLength / normalLength)) * 100) : 0;
+            
+            document.getElementById('sizeReduction').textContent = `~${reduction}% smaller`;
+        }
+        
+        // Copy to clipboard
+        function copyToClipboard() {
+            const outputText = document.getElementById('outputBox').textContent;
+            
+            navigator.clipboard.writeText(outputText).then(() => {
+                alert('Small text copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy. Please select and copy manually.');
+            });
+        }
+        
+        // Clear all text
+        function clearText() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('outputBox').textContent = '';
+            document.getElementById('normalText').textContent = '';
+            document.getElementById('smallText').textContent = '';
+            document.getElementById('sizeReduction').textContent = '~0% smaller';
+        }
+        
+        // Initialize with some text
+        window.onload = function() {
+            generateSmallText();
+        };
+    </script>
 </body>
 </html>
