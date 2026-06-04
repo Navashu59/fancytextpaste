@@ -117,3 +117,32 @@ Next observation plan:
 - Compare GSC Performance after 7-14 days against the post-refresh baseline.
 - Prioritize follow-up by query/page signals: impressions first, then position movement, CTR, and click recovery.
 - Do not request indexing for legacy redirect URLs; keep them as redirects and excluded from the sitemap.
+
+## 2026-06-04 - P0/P1 Technical SEO Cleanup
+
+Scope:
+
+- Fixed malformed title/meta output on priority pages where previous rewrites left nested `<title>` or broken meta-description fragments.
+- Fixed missing or duplicated canonical/robots tags on older handcrafted pages.
+- Fixed the misspelled `Strict-Transport-Security` response header.
+- Repaired internal links that pointed to non-existent legacy paths.
+- Added the orphan Unicode reference guides to the `/guides/` hub.
+- Rebuilt `public/sitemap.xml` with 78 canonical URLs. Legacy redirect compatibility pages `/tools/invisible-text/` and `/tools/superscript-subscript/` remain excluded.
+
+Validation:
+
+- 80 local `index.html` files checked.
+- 78 canonical sitemap URLs, matching all index pages except the two legacy redirect compatibility pages.
+- 0 malformed title/canonical/description head issues.
+- 0 missing canonical/robots tags on canonical pages.
+- 0 broken internal links.
+- 0 zero-inbound canonical pages.
+- JSON-LD parses on all checked HTML pages.
+- Local Chrome smoke test passed for homepage, italic, WhatsApp, Twitter/X, cool font, guides hub, and Unicode encoding guide.
+
+Next observation plan:
+
+- Deploy through GitHub Actions to Cloudflare Pages.
+- Verify live title/canonical/header output after deployment.
+- Resubmit the canonical sitemap in GSC and avoid submitting `sitemap-not-indexed.xml` or `www` sitemap variants.
+- Recheck GSC Page Indexing after 7-14 days, prioritizing unknown URLs and crawled-not-indexed pages.
