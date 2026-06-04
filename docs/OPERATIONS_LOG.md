@@ -146,3 +146,16 @@ Next observation plan:
 - Verify live title/canonical/header output after deployment.
 - Resubmit the canonical sitemap in GSC and avoid submitting `sitemap-not-indexed.xml` or `www` sitemap variants.
 - Recheck GSC Page Indexing after 7-14 days, prioritizing unknown URLs and crawled-not-indexed pages.
+
+Deployment and GSC update:
+
+- Commit `c309c1e` deployed successfully through GitHub Actions run `26927684675`.
+- Live checks confirmed fixed title/canonical output on homepage, italic, WhatsApp, Twitter/X, cool font, and guides hub.
+- Live response headers now include `strict-transport-security`.
+- Live sitemap has 78 URLs and includes the four previously missing Unicode guide URLs.
+- Live sitemap excludes legacy redirect compatibility URLs `/tools/invisible-text/` and `/tools/superscript-subscript/`.
+- GSC canonical sitemap submission completed on 2026-06-04.
+- Removed old GSC sitemap submissions for:
+  - `https://fancytextpaste.com/sitemap-not-indexed.xml`
+  - `https://www.fancytextpaste.com/sitemap.xml`
+- GSC sitemap list now contains only `https://fancytextpaste.com/sitemap.xml`.
