@@ -159,3 +159,35 @@ Deployment and GSC update:
   - `https://fancytextpaste.com/sitemap-not-indexed.xml`
   - `https://www.fancytextpaste.com/sitemap.xml`
 - GSC sitemap list now contains only `https://fancytextpaste.com/sitemap.xml`.
+
+## 2026-07-05 - High-Signal Page Deepening
+
+Scope:
+
+- Deepened six pages with Semrush/GSC/SERP-gap-backed H2 coverage:
+  - `/tools/bold-text-generator/`
+  - `/tools/italic-text-generator/`
+  - `/platforms/instagram-fonts/`
+  - `/platforms/twitter-fonts/`
+  - `/tools/bubble-text-generator/`
+  - `/tools/aesthetic-text-generator/`
+- Added platform-use, Unicode compatibility, searchability, accessibility, and troubleshooting sections without duplicating FAQ wording.
+- Updated `public/sitemap.xml` lastmod for the six pages.
+- Updated `public/llms.txt` with compatibility caveats and priority pages.
+
+Validation:
+
+- Local structure check passed: one H1 per edited page and all target H2s present.
+- Playwright static smoke test passed for `/tools/bold-text-generator/` and `/platforms/instagram-fonts/`.
+- Production checks passed after deploy for:
+  - `https://fancytextpaste.com/tools/bold-text-generator/`
+  - `https://fancytextpaste.com/platforms/instagram-fonts/`
+
+Deployment:
+
+- Commit `6423b7f` pushed to `main`.
+- Direct Cloudflare Pages deploy completed: `https://73870231.fancytextpaste.pages.dev`.
+
+Observation:
+
+- A 14-day cross-site review automation was created for 2026-07-19 to compare updated-page impressions, clicks, CTR, average position, and new long-tail query pickup.
