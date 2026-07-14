@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+*.log
+*_generation_errors.log
+.wrangler/
+dist/
+coverage/
