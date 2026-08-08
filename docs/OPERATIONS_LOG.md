@@ -191,3 +191,22 @@ Deployment:
 Observation:
 
 - A 14-day cross-site review automation was created for 2026-07-19 to compare updated-page impressions, clicks, CTR, average position, and new long-tail query pickup.
+
+## 2026-08-09 - SERP Gap Trust Refresh
+
+Scope:
+
+- Refreshed `/tools/bubble-text-generator/`, `/tools/aesthetic-text-generator/`, `/tools/discord-fonts/`, `/tools/bold-text-generator/`, and `/guides/unicode-fonts-explained/`.
+- Used DeepSeek as copy/data assistant for first-pass gap themes, then reviewed and implemented final copy manually.
+- Focused on real SERP gap themes: copy-paste workflow, platform-specific use cases, fallback-font limitations, box-glyph troubleshooting, and when plain text is safer.
+
+Validation:
+
+- JSON-LD parsed on all five edited pages.
+- Static output check passed for `public/index.html`, `public/sitemap.xml`, `public/robots.txt`, and `public/ads.txt`.
+- `git diff --check` passed.
+
+Observation:
+
+- Review 14-21 days after deployment for impressions/clicks/CTR on bubble, aesthetic, Discord fonts, bold text, and Unicode compatibility queries.
+- Guardrail: existing top FancyTextPaste pages should not show material click or impression drops from this copy refresh.
