@@ -32,7 +32,7 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does strikethrough text work?","acceptedAnswer":{"@type":"Answer","text":"Strikethrough text uses the Unicode combining character U+0336 (Combining Long Stroke Overlay). This character is added after each letter, and the rendering system draws a horizontal line through the preceding character. Our double strikethrough uses U+0335 (Combining Short Stroke Overlay) for a thinner, shorter line effect."}},{"@type":"Question","name":"Can I use strikethrough text on social media?","acceptedAnswer":{"@type":"Answer","text":"Yes! Strikethrough Unicode text works on most social media platforms including Instagram, Twitter/X, Facebook, Discord, and TikTok. Some platforms may render combining characters slightly differently, but the strikethrough effect is widely supported across iOS, Android, Windows, and macOS."}},{"@type":"Question","name":"What is the difference between single and double strikethrough?","acceptedAnswer":{"@type":"Answer","text":"Single strikethrough uses U+0336 (Combining Long Stroke Overlay) which draws a full-width horizontal line through each character. Double strikethrough uses U+0335 (Combining Short Stroke Overlay) which produces a shorter, thinner line. The visual difference is subtle but noticeable, with single being the more prominent option."}},{"@type":"Question","name":"Is this different from HTML strikethrough?","acceptedAnswer":{"@type":"Answer","text":"Yes. HTML strikethrough uses tags like <s> or <del> which only work in HTML documents. Unicode strikethrough uses combining characters that work in plain text anywhere, including social media bios, text messages, email subjects, and gaming usernames."}},{"@type":"Question","name":"Can I combine strikethrough with bold text?","acceptedAnswer":{"@type":"Answer","text":"Yes! Our generator includes a Bold + Strikethrough combination that first converts text to Unicode bold characters and then applies the strikethrough combining character. This creates bold crossed-out text for maximum visual impact."}}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Strikethrough Text Generator — Cross Out Text and Copy It Anywhere","author":{"@type":"Person","name":"Alex Chen","url":"https://fancytextpaste.com/about/"},"publisher":{"@type":"Organization","name":"fancytextpaste","url":"https://fancytextpaste.com/"},"datePublished":"2026-02-15","dateModified":"2026-03-09"}
+{"@context":"https://schema.org","@type":"Article","headline":"Strikethrough Text Generator — Cross Out Text and Copy It Anywhere","author":{"@type":"Person","name":"Alex Chen","url":"https://fancytextpaste.com/about/"},"publisher":{"@type":"Organization","name":"fancytextpaste","url":"https://fancytextpaste.com/"},"datePublished":"2026-02-15","dateModified":"2026-08-15"}
 </script>
 <style>.eeat-byline{display:flex;align-items:center;gap:8px;font-size:0.85rem;color:#666;margin:8px 0 0;flex-wrap:wrap}.eeat-byline .author{font-weight:500;color:#444}.eeat-byline .sep{color:#ccc}</style>
 </head>
@@ -57,8 +57,8 @@
 <section class="tool-hero">
   <div class="container">
     <h1>Strikethrough Text Generator</h1>
-    <p class="subtitle"><strong>How to use it:</strong> Type or paste your text, copy the crossed-out result, and paste it into Discord, Instagram, notes, edits, price markdowns, or anywhere else you want text with a line through it. Pick the classic single-line style or the lighter double-line version.</p>
-    <div class="eeat-byline"><span class="author">By Alex Chen</span><span class="sep">|</span><time datetime="2026-03-09">Updated Mar 9, 2026</time></div>
+    <p class="subtitle"><strong>How to use it:</strong> Type or paste your text, copy the crossed-out result, and paste it into Discord, Instagram, notes, edits, price markdowns, or another text field that accepts Unicode. Pick the classic single-line style or the lighter double-line version.</p>
+    <div class="eeat-byline"><span class="author">By Alex Chen</span><span class="sep">|</span><time datetime="2026-08-15">Updated Aug 15, 2026</time></div>
     <div style="margin:16px 0 20px;padding:14px 16px;border:1px solid #dbeafe;border-radius:10px;background:#eff6ff;">
       <strong>Quick answer:</strong> To strikethrough text online, type your words, copy the crossed-out output, and paste it anywhere. The classic look uses the Unicode long stroke overlay, which turns plain text like <strong>sale price</strong> into <strong>s̶a̶l̶e̶ ̶p̶r̶i̶c̶e̶</strong>.
     </div>
@@ -85,7 +85,7 @@
 
     <section class="seo-content">
       <h2>Strikethrough Text Generator - Cross Out Text Online</h2>
-      <p>Our strikethrough text generator adds a horizontal line through each character of your text using Unicode combining characters. The result looks like crossed-out or deleted text, and it can be copied and pasted into any text field on any device. Strikethrough is one of the most popular text effects for social media, used daily by millions to show corrections, add humor, or create dramatic emphasis in posts and bios.</p>
+      <p>Our strikethrough text generator adds a horizontal line through each character of your text using Unicode combining characters. The result looks like crossed-out or deleted text, and it can be copied into many social, messaging, and plain-text fields. Use it for short edits, jokes, price markdowns, and before-after text rather than long paragraphs.</p>
 
       <h3>Two Strikethrough Modes</h3>
       <p>We offer two distinct strikethrough styles, each using a different Unicode combining character:</p>
@@ -111,7 +111,13 @@
       </ul>
 
       <h3>Where Strikethrough Works</h3>
-      <p>Unicode strikethrough text is supported on virtually every modern platform. It works on <a href="/platforms/instagram-fonts/">Instagram</a> bios and captions, <a href="/platforms/twitter-fonts/">Twitter/X</a> tweets and display names, <a href="/platforms/facebook-fonts/">Facebook</a> posts and comments, <a href="/platforms/discord-text-formatting/">Discord</a> messages, WhatsApp, Telegram, and any other app that displays Unicode text. The combining characters render correctly on iOS, Android, Windows, macOS, and Linux.</p>
+      <p>Unicode strikethrough text works in many modern apps, including <a href="/platforms/instagram-fonts/">Instagram</a> bios and captions, <a href="/platforms/twitter-fonts/">Twitter/X</a> posts, <a href="/platforms/facebook-fonts/">Facebook</a> posts and comments, <a href="/platforms/discord-text-formatting/">Discord</a> messages, WhatsApp, and Telegram. Some apps and fonts align combining marks differently, so paste a short test before using it in public text.</p>
+
+      <h2>Why is the strikethrough line uneven after I paste it?</h2>
+      <p>The line is drawn by the receiving app's font renderer, not by this website. Emojis, accented letters, symbols, and some mobile fonts can place the combining stroke slightly higher, lower, or wider than expected. Plain letters and short words are the most reliable.</p>
+
+      <h2>When should I use HTML strikethrough instead?</h2>
+      <p>Use HTML tags such as <code>&lt;s&gt;</code> or <code>&lt;del&gt;</code> when you control a web page or rich-text editor. Use Unicode strikethrough when you need copied plain text for a bio, message, comment, or app field that does not allow HTML.</p>
 
       <p>For more text effects, explore our <a href="/tools/underline-text-generator/">underline text generator</a>, <a href="/tools/bold-text-generator/">bold text generator</a>, <a href="/tools/zalgo-text-generator/">Zalgo text generator</a>, or browse <a href="/">all 50+ styles</a>.</p>
     </section>  <section class="source-references">
