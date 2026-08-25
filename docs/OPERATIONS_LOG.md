@@ -210,3 +210,32 @@ Observation:
 
 - Review 14-21 days after deployment for impressions/clicks/CTR on bubble, aesthetic, Discord fonts, bold text, and Unicode compatibility queries.
 - Guardrail: existing top FancyTextPaste pages should not show material click or impression drops from this copy refresh.
+
+## 2026-08-25 - CTR, SERP/GEO, and Indexing Support Refresh
+
+Scope:
+
+- Refreshed `/tools/upside-down-text-generator/`, `/tools/cool-font-generator/`, `/tools/strikethrough-text-generator/`, `/guides/unicode-fonts-explained/`, `/guides/accessibility-and-fancy-text/`, and `/guides/`.
+- Used GSC baseline from 2026-08-08 to 2026-08-22:
+  - `/tools/upside-down-text-generator/`: 346 impressions, 0 clicks, average position 12.1.
+  - `/tools/cool-font-generator/`: 2,734 impressions, 14 clicks, CTR 0.5%, average position 45.1.
+  - `/tools/strikethrough-text-generator/`: 719 impressions, 7 clicks, CTR 1.0%, average position 30.8.
+  - Overall inspected URL state: 23 indexed of 73 checked URLs.
+- Used real SERP observations and DeepSeek as copy/data assistant. Codex reviewed and implemented final copy manually.
+- Added concise search-style H2s for copy/paste workflow, platform support, Unicode-not-real-font facts, box-glyph troubleshooting, and screen-reader/accessibility caveats.
+- Fixed `llms.txt` stale strikethrough URL and updated priority GEO entries.
+- Updated sitemap lastmod for edited pages.
+
+Validation:
+
+- 83 HTML files parsed with 0 H1/title/meta/canonical errors.
+- JSON-LD parsed on all HTML files.
+- `public/sitemap.xml` parsed and contains all edited target URLs.
+- Playwright smoke test passed for all edited target pages and guides hub.
+- `git diff --check` passed.
+
+Observation:
+
+- Review after 14 full days, earliest 2026-09-09.
+- Watch upside-down CTR, cool-font ranking/query breadth, strikethrough crossed-out query coverage, Unicode/accessibility long-tail impressions, and indexed URL count.
+- Guardrail: italic, bold, Discord, bubble, and Instagram font pages should not show material click or impression drops.

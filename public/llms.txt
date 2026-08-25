@@ -8,8 +8,10 @@ FancyTextPaste converts normal text into Unicode characters that can display as 
 
 - [Bold Text Generator](https://fancytextpaste.com/tools/bold-text-generator/): Convert text to 𝗯𝗼𝗹𝗱 Unicode (sans-serif, serif, italic variants)
 - [Italic Text Generator](https://fancytextpaste.com/tools/italic-text-generator/): Convert short text into Unicode italic styles for bios, captions, and display names
+- [Cool Font Generator](https://fancytextpaste.com/tools/cool-font-generator/): Preview 50+ Unicode text styles for Instagram bios, TikTok captions, Discord names, and profiles
 - [Cursive Text Generator](https://fancytextpaste.com/tools/cursive-text-generator/): Convert text to 𝒸𝓊𝓇𝓈𝒾𝓋𝑒 script
-- [Strikethrough Generator](https://fancytextpaste.com/tools/strikethrough-generator/): Add s̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ to text
+- [Strikethrough Text Generator](https://fancytextpaste.com/tools/strikethrough-text-generator/): Add crossed-out Unicode text for edits, jokes, corrections, and price markdowns
+- [Upside Down Text Generator](https://fancytextpaste.com/tools/upside-down-text-generator/): Flip text upside down and copy the Unicode result into bios, posts, and chats
 - [Zalgo Text Generator](https://fancytextpaste.com/tools/zalgo-text-generator/): Create g̸̢̛l̴̨̛i̶̡t̷c̵̢h̶̡ text
 - [Small Text Generator](https://fancytextpaste.com/tools/small-text-generator/): Convert to ˢᵐᵃˡˡ superscript text
 - [Aesthetic Text Generator](https://fancytextpaste.com/tools/aesthetic-text-generator/): Convert to ａｅｓｔｈｅｔｉｃ fullwidth text
@@ -26,4 +28,6 @@ Important caveat: Unicode styled text is useful for visual emphasis, but it can 
 ## Guides
 
 - [How Zalgo Text Works](https://fancytextpaste.com/guides/how-zalgo-text-works/): Unicode combining characters explained
-- [Gothic Text History](https://fancytextpaste.com/guides/gothic-text-history/): Origins of blackletter typography
+- [Unicode Fonts Explained](https://fancytextpaste.com/guides/unicode-fonts-explained/): Why copy-paste fonts are Unicode characters, why some show as boxes, and when to keep text plain
+- [Fancy Text Accessibility](https://fancytextpaste.com/guides/accessibility-and-fancy-text/): How screen readers handle Unicode text and when decorative text should be avoided
+- [Best Fonts for Social Media](https://fancytextpaste.com/guides/best-fonts-for-social-media/): Platform-focused choices for Instagram, TikTok, Discord, X/Twitter, Facebook, and LinkedIn
