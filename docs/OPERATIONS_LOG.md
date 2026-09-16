@@ -239,3 +239,30 @@ Observation:
 - Review after 14 full days, earliest 2026-09-09.
 - Watch upside-down CTR, cool-font ranking/query breadth, strikethrough crossed-out query coverage, Unicode/accessibility long-tail impressions, and indexed URL count.
 - Guardrail: italic, bold, Discord, bubble, and Instagram font pages should not show material click or impression drops.
+
+## 2026-09-16 - Bold/Facebook CTR and Intent Refresh
+
+Scope:
+
+- Refreshed `/tools/bold-text-generator/` for CTR expression only: cleaner title/meta/OG copy, updated SoftwareApplication description, and refreshed article modified date.
+- Refreshed `/platforms/facebook-fonts/` for Facebook-specific search intent:
+  - “How do I change fonts on Facebook?”
+  - “Where do Facebook fonts work?”
+  - readable Facebook font choices
+  - box/question-mark troubleshooting
+  - accessibility and Facebook search caveats
+  - native formatting vs Unicode styling
+- Updated `public/sitemap.xml` lastmod for both edited URLs.
+- Used DeepSeek as a copy/strategy assistant for first-pass snippets; Codex reviewed, reduced hype, and implemented final copy manually.
+
+Validation:
+
+- Static HTML check passed for both edited pages: one H1, title/meta/canonical present, JSON-LD parses.
+- `public/sitemap.xml` parses.
+
+Observation:
+
+- Watch 14-21 days after deploy:
+  - `/tools/bold-text-generator/` CTR for `bold text generator`, `bold text`, and `bold text copy and paste`.
+  - `/platforms/facebook-fonts/` CTR for `facebook fonts` and `facebook font generator`.
+  - Guardrail: no material impressions/clicks drop on italic, Discord, bubble, and Instagram font pages.
