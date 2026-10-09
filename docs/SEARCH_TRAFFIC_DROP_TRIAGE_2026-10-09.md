@@ -32,11 +32,20 @@ Italic and Roblox account for 179 of the 294 net lost clicks (60.9%). The surviv
 - Before deployment, a browser test substituting the proposed CSP loaded `gtag.js` (HTTP 200) and attempted a `www.google-analytics.com/g/collect` request. The test intercepted that request so it did not create a synthetic Analytics session.
 - The existing CSP also blocks the AdSense script and Cloudflare Insights beacon. Those are separate pre-existing issues. This change intentionally does not enable ad scripts, change ad layout, or broaden the policy for either service; ad serving and any consent requirements need a separate review.
 
+### Deployment verification
+
+- Commit `820570e` was pushed to `main`; GitHub Actions run `37954119922` completed successfully: https://github.com/Navashu59/fancytextpaste/actions/runs/37954119922 .
+- Production home, Italic, and Roblox responses returned the scoped new CSP. A clean production browser loaded `gtag.js` with HTTP 200 and sent a `page_view` request to `www.google-analytics.com/g/collect` with the expected `G-CZD0573ZSF` measurement ID; the observed collection response was HTTP 204.
+- Desktop Italic and mobile Roblox tests returned HTTP 200, generated 7 and 56 style cards respectively, and copied the converted `Test 123` text successfully. The existing AdSense CSP block remained unchanged.
+- A same-session GA4 Realtime API check still returned no rows. This does not negate the browser/network verification, but standard GA4 reporting must be rechecked after processing. Do not label Analytics fully recovered until sessions appear in the property.
+
 ## Decision gate and guardrails
 
 1. Verify the deployed CSP response, a real Analytics collection request, generator typing/copy, and desktop/mobile layout. Check GA4 Realtime; then allow 24-48 hours for standard reports. Historical GA4 gaps cannot be backfilled.
 2. When Oct 9-15 are all final in GSC, compare them with a pre-update seven-day window and Oct 2-8, including sitewide, Italic, Roblox, Bold, and Cool Font pages. Split leading query groups by device and country where volume permits. Check the live search results before changing titles or descriptions.
 3. If the main pages recover without intervention, make no ranking-motivated edits. If they remain materially down, verify narrowly scoped accuracy corrections one page at a time. Roblox's page currently promises broad Unicode compatibility and filtering exemptions; Roblox says display names are filtered and character support is limited or conditional: https://en.help.roblox.com/hc/en-us/articles/4401938870292-Changing-Your-Display-Name . Italic's page has unconditional compatibility claims alongside caveats. Correct claims only after verification, preserving URL, canonical, title, H1, generator controls, and layout in the first pass.
 4. After any page change, compare at least seven final GSC days against equal weekdays and unaffected control pages. Revert only if evidence connects a deterioration to that change. Avoid broad rewrites and do not treat low-volume percentage changes as decisive.
+
+The active thread heartbeat `fancytextpaste-october-search-and-ga4-follow-up` will perform the GA4 processing check and final post-update GSC checkpoint. It stays quiet unless a meaningful result, technical failure, or required user action appears.
 
 No content, metadata, URL, canonical, generator, or ad-layout changes were made in this triage.
