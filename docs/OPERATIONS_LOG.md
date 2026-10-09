@@ -1,5 +1,11 @@
 # FancyTextPaste Operations Log
 
+## 2026-10-09 - Search Drop Triage and GA4 CSP Repair
+
+- GSC final-week clicks fell from 690 (Sep 21-27) to 396 (Sep 28-Oct 4), concentrated in Italic and Roblox. Both pages remain indexed with the expected Google-selected canonical. See `docs/SEARCH_TRAFFIC_DROP_TRIAGE_2026-10-09.md` for the baseline and decision gate.
+- Diagnosed GA4 undercount: the production CSP blocked the existing `G-CZD0573ZSF` tag from loading. Prepared a scoped `public/_headers` change allowing Google Analytics script and collection hosts while leaving page content, tools, URLs, and other CSP directives unchanged.
+- Next: verify production deployment and Analytics collection, then wait for Oct 9-15 to become final GSC data before considering page-specific SEO changes. The CSP line is the rollback point if unexpected functionality or security effects appear.
+
 ## 2026-05-27 - Wave 1 Start
 
 Boundary findings:
