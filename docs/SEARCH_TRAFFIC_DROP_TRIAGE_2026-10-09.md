@@ -23,6 +23,12 @@ The complete week lost 294 clicks (-42.6%) while impressions fell only 4.0%. Dai
 
 Italic and Roblox account for 179 of the 294 net lost clicks (60.9%). The surviving query-level rows are much smaller than page totals because Search Console anonymizes some queries; do not attribute the full loss to any one visible query. Both affected URLs passed URL Inspection, are submitted and indexed, and have Google-selected canonicals matching their self-canonicals. Last reported crawls were Oct 5 for Italic and Sep 19 for Roblox.
 
+### Segment audit - 2026-10-12
+
+- Sitewide mobile clicks fell 468 -> 250 (218 of the 294 net lost clicks), with impressions 16,190 -> 15,810 and average position 7.01 -> 7.71. Desktop also fell 195 -> 134, with impressions 11,166 -> 10,447 and position 9.73 -> 10.44. The decline is not mobile-only; mobile contributes more absolute loss partly because it had more baseline clicks.
+- US clicks fell 170 -> 90 while impressions rose 8,157 -> 8,309 and position moved 8.76 -> 9.41. India fell 89 -> 43, with impressions 3,009 -> 2,398 and position 7.91 -> 8.87. Both ranking/CTR and demand mix can contribute; the segment data does not establish a single cause.
+- GSC queries grouped by `page+device` or `page+country` returned materially fewer clicks than the `page`-only totals for Italic and Roblox. Google documents that filtering/grouping, privacy thresholds, and internal row limits can omit data: https://developers.google.com/webmaster-tools/v1/how-tos/all-your-data . Use the sitewide device/country rows for directional segmentation, but **do not sum the incomplete page-segment rows to allocate the page losses**.
+
 ## GA4 instrumentation issue
 
 - GA4 property `527502448` has web stream `G-CZD0573ZSF`, matching the production pages' tag ID.

@@ -13,6 +13,7 @@
 - GA4 property `527502448` recorded 60 Google organic sessions on Oct 10 and 34 on Oct 11 after the Oct 9 CSP fix. Italic and Roblox received 28 and 10 organic landing sessions across those two days. The pre-fix GA4 gap cannot be backfilled.
 - GSC has only Oct 9 as a final day in the Oct 9-15 post-update window. Do not infer search recovery or deploy ranking-motivated page changes from the single day.
 - Logged specific compatibility-claim candidates for Roblox and Italic in `docs/SEARCH_TRAFFIC_DROP_TRIAGE_2026-10-09.md`; no content, metadata, URL, generator, or ad changes were made.
+- Read-only GSC segmentation found declines on both mobile and desktop and in the US and India. Page+segment API rows did not reconcile with page-only totals, so the detailed page allocation was not used for a content decision. No site edit was made.
 
 ## 2026-05-27 - Wave 1 Start
 
