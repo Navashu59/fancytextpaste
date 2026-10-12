@@ -8,6 +8,12 @@
 - Deployed commit `820570e` via successful GitHub Actions run `37954119922`. Live headers, GA4 script load, `page_view` collection request, and Italic/Roblox generation and copy were verified. GA4 Realtime had not populated at the same-session check; recheck standard reports after 24-48 hours before calling reporting recovered. AdSense remains blocked by the pre-existing CSP and was intentionally left out of this change.
 - Activated thread heartbeat `fancytextpaste-october-search-and-ga4-follow-up` for the GA4 processing check and the final Oct 9-15 GSC decision gate; it should stay quiet until an actionable result.
 
+## 2026-10-12 - GA4 Reporting Recovered; Search Decision Pending
+
+- GA4 property `527502448` recorded 60 Google organic sessions on Oct 10 and 34 on Oct 11 after the Oct 9 CSP fix. Italic and Roblox received 28 and 10 organic landing sessions across those two days. The pre-fix GA4 gap cannot be backfilled.
+- GSC has only Oct 9 as a final day in the Oct 9-15 post-update window. Do not infer search recovery or deploy ranking-motivated page changes from the single day.
+- Logged specific compatibility-claim candidates for Roblox and Italic in `docs/SEARCH_TRAFFIC_DROP_TRIAGE_2026-10-09.md`; no content, metadata, URL, generator, or ad changes were made.
+
 ## 2026-05-27 - Wave 1 Start
 
 Boundary findings:

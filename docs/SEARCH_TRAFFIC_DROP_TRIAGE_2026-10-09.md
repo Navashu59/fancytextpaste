@@ -39,6 +39,17 @@ Italic and Roblox account for 179 of the 294 net lost clicks (60.9%). The surviv
 - Desktop Italic and mobile Roblox tests returned HTTP 200, generated 7 and 56 style cards respectively, and copied the converted `Test 123` text successfully. The existing AdSense CSP block remained unchanged.
 - A same-session GA4 Realtime API check still returned no rows. This does not negate the browser/network verification, but standard GA4 reporting must be rechecked after processing. Do not label Analytics fully recovered until sessions appear in the property.
 
+### GA4 follow-up - 2026-10-12
+
+- Standard GA4 reports now contain 60 `google / organic` sessions on Oct 10 and 34 on Oct 11. Across those two dates, the leading organic landing pages include Italic (28 sessions) and Roblox (10 sessions). This confirms that the property is receiving post-fix organic acquisition data; the historical gap before the CSP fix remains unrecoverable.
+- GSC `dataState=final` currently includes only Oct 9 from the seven-day Oct 9-15 post-update window: 59 site clicks / 4,130 impressions / average position 8.27. Italic had 26 clicks / 2,561 impressions and Roblox 10 / 247. One day is not a recovery decision and must not be compared directly with a seven-day total.
+
+### Content accuracy candidates - no page edits yet
+
+- Roblox page: the subtitle, FAQ, and technical reference say or imply that 50+ Unicode styles work on Roblox, that most Unicode characters are accepted in display names, and that display names or descriptive fields are exempt from filtering. Roblox's official support page states that text including display names is filtered and that additional character support is conditional. Verify acceptance in the specific target fields before claiming compatibility; otherwise qualify or remove the universal promises. Do not change title, H1, canonical, generator, or layout in the first content pass.
+- Italic page: the body and FAQ say italic Unicode works "anywhere" or on "all social media platforms," while the same page notes app, browser, device, and field limitations. Align those claims with the documented caveats without reducing the tool's above-the-fold utility.
+- These are trust/accuracy issues, not established causes of the Sep 25 traffic break. Defer ranking-motivated content changes until the full Oct 9-15 GSC window is final and a page-level decision is supported.
+
 ## Decision gate and guardrails
 
 1. Verify the deployed CSP response, a real Analytics collection request, generator typing/copy, and desktop/mobile layout. Check GA4 Realtime; then allow 24-48 hours for standard reports. Historical GA4 gaps cannot be backfilled.
