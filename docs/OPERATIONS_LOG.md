@@ -1,5 +1,11 @@
 # FancyTextPaste Operations Log
 
+## 2026-10-18 - Final Post-Update Search Checkpoint
+
+- All Oct 9-15 GSC days are final. Equal-weekday site clicks were 739 (Sep 17-23), 353 (Oct 2-8), and 367 (Oct 9-15): still 50.3% below pre-update, but 4.0% above the preceding week. Italic remained down at 212 -> 131; Roblox improved from 47 to 62 against the preceding week. See `docs/SEARCH_TRAFFIC_DROP_TRIAGE_2026-10-09.md` for full page, query, device, country, indexing, and GA4 evidence.
+- GA4 now records post-fix Google organic sessions (373 on Oct 10-15); historical pre-fix GA4 data remains incomplete. All four priority pages are indexed with matching canonicals.
+- Chose one below-the-fold Italic accuracy correction, replacing an unsupported universal Unicode-display claim with a font-support caveat. No evidence establishes this claim as the cause of the search decline. Keep URL, canonical, title, H1, generator workflow, layout, ads, and CSP unchanged; review the next seven final GSC days before another page edit.
+
 ## 2026-10-09 - Search Drop Triage and GA4 CSP Repair
 
 - GSC final-week clicks fell from 690 (Sep 21-27) to 396 (Sep 28-Oct 4), concentrated in Italic and Roblox. Both pages remain indexed with the expected Google-selected canonical. See `docs/SEARCH_TRAFFIC_DROP_TRIAGE_2026-10-09.md` for the baseline and decision gate.
