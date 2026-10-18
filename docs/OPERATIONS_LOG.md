@@ -5,6 +5,7 @@
 - All Oct 9-15 GSC days are final. Equal-weekday site clicks were 739 (Sep 17-23), 353 (Oct 2-8), and 367 (Oct 9-15): still 50.3% below pre-update, but 4.0% above the preceding week. Italic remained down at 212 -> 131; Roblox improved from 47 to 62 against the preceding week. See `docs/SEARCH_TRAFFIC_DROP_TRIAGE_2026-10-09.md` for full page, query, device, country, indexing, and GA4 evidence.
 - GA4 now records post-fix Google organic sessions (373 on Oct 10-15); historical pre-fix GA4 data remains incomplete. All four priority pages are indexed with matching canonicals.
 - Chose one below-the-fold Italic accuracy correction, replacing an unsupported universal Unicode-display claim with a font-support caveat. No evidence establishes this claim as the cause of the search decline. Keep URL, canonical, title, H1, generator workflow, layout, ads, and CSP unchanged; review the next seven final GSC days before another page edit.
+- Deployed commit `cb76653` via successful GitHub Actions run `39128335706`. Live desktop/mobile checks confirmed HTTP 200, the corrected sentence, seven style cards, input/copy functionality, unchanged title/H1/canonical, and no page errors. Hold further page edits until Oct 19-25 are all final GSC days and the equal-weekday control comparison is complete.
 
 ## 2026-10-09 - Search Drop Triage and GA4 CSP Repair
 
